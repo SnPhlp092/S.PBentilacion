@@ -5,24 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="Sean Philip D. Bentilacion - Systems Architect specializing in resilient web architectures and secure regional infrastructures.">
-    <meta name="theme-color" content="#020617">
+    <meta name="theme-color" content="#0a0a0a">
     <title>Sean Philip D. Bentilacion | Systems Architect</title>
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Plus+Jakarta+Sans:wght@300;400;600;800&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
     <style>
         :root {
-            --bg: #020617;
-            --surface: #0f172a;
-            --surface-light: #1a2847;
-            --accent: #38bdf8;
-            --accent-glow: rgba(56, 189, 248, 0.2);
-            --accent-strong: rgba(56, 189, 248, 0.4);
-            --text-main: #f8fafc;
-            --text-sub: #94a3b8;
-            --text-muted: #64748b;
+            --bg: #0a0a0a;
+            --surface: #1a1a1a;
+            --surface-light: #2a2a2a;
+            --accent: #e0e0e0;
+            --accent-glow: rgba(224, 224, 224, 0.15);
+            --accent-strong: rgba(224, 224, 224, 0.3);
+            --text-main: #ffffff;
+            --text-sub: #b0b0b0;
+            --text-muted: #808080;
             --transition: all 0.5s cubic-bezier(0.2, 1, 0.3, 1);
             --transition-fast: all 0.3s cubic-bezier(0.2, 1, 0.3, 1);
-            --accent-secondary: #06b6d4;
-            --accent-tertiary: #8b5cf6;
+            --accent-secondary: #a8a8a8;
+            --accent-tertiary: #686868;
             --success: #10b981;
             --warning: #f59e0b;
             --error: #ef4444;
@@ -57,7 +57,7 @@
             width: 100%;
             height: 100%;
             background-image: 
-                url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' result='noise' /%3E%3C/filter%3E%3Crect width='400' height='400' filter='url(%23noiseFilter)' opacity='0.05'/%3E%3C/svg%3E");
+                url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' result='noise'/%3E%3C/filter%3E%3Crect width='400' height='400' fill='%23000000' filter='url(%23noiseFilter)' opacity='0.03'/%3E%3C/svg%3E");
             pointer-events: none;
             z-index: 1;
             mix-blend-mode: overlay;
@@ -72,7 +72,7 @@
             background: linear-gradient(to right, var(--accent), var(--accent-secondary), var(--accent-tertiary));
             width: 0%;
             z-index: 2000;
-            box-shadow: 0 0 30px var(--accent-glow), inset 0 0 20px rgba(56, 189, 248, 0.5);
+            box-shadow: 0 0 30px var(--accent-glow), inset 0 0 20px rgba(224, 224, 224, 0.3);
         }
 
         /* --- ANIMATED BACKGROUND --- */
@@ -93,7 +93,7 @@
             height: 60vmax;
             border-radius: 50%;
             filter: blur(120px);
-            opacity: 0.08;
+            opacity: 0.05;
             will-change: transform;
         }
 
@@ -102,7 +102,7 @@
             top: -20%;
             left: -10%;
             animation: drift 45s infinite alternate linear;
-            box-shadow: 0 0 100px var(--accent);
+            box-shadow: 0 0 100px rgba(224, 224, 224, 0.3);
         }
 
         .orb-2 {
@@ -110,7 +110,7 @@
             bottom: -10%;
             right: -10%;
             animation: drift 50s infinite alternate-reverse linear;
-            box-shadow: 0 0 100px var(--accent-tertiary);
+            box-shadow: 0 0 100px rgba(104, 104, 104, 0.2);
         }
 
         .orb-3 {
@@ -120,7 +120,7 @@
             width: 50vmax;
             height: 50vmax;
             animation: drift 55s infinite linear;
-            box-shadow: 0 0 80px var(--accent-secondary);
+            box-shadow: 0 0 80px rgba(168, 168, 168, 0.2);
         }
 
         @keyframes drift {
@@ -145,20 +145,20 @@
             height: 90px;
             display: flex;
             align-items: center;
-            background: rgba(2, 6, 23, 0.7);
+            background: rgba(10, 10, 10, 0.8);
             backdrop-filter: blur(40px);
             -webkit-backdrop-filter: blur(40px);
-            border-bottom: 1px solid rgba(56, 189, 248, 0.15);
+            border-bottom: 1px solid rgba(224, 224, 224, 0.15);
             position: sticky;
             top: 0;
             z-index: 1000;
             transition: var(--transition-fast);
-            box-shadow: 0 8px 40px rgba(56, 189, 248, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+            box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.05);
         }
 
         nav.scroll-active {
-            background: rgba(2, 6, 23, 0.95);
-            box-shadow: 0 16px 60px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+            background: rgba(10, 10, 10, 0.95);
+            box-shadow: 0 16px 60px rgba(0, 0, 0, 0.7), inset 0 1px 0 rgba(255, 255, 255, 0.05);
         }
 
         .nav-flex {
@@ -176,13 +176,13 @@
             font-size: 1.2rem;
             transition: var(--transition-fast);
             letter-spacing: 2px;
-            text-shadow: 0 0 20px rgba(56, 189, 248, 0.5);
+            text-shadow: 0 0 20px rgba(224, 224, 224, 0.3);
         }
 
         .logo:hover {
             color: var(--accent);
             transform: scale(1.05);
-            text-shadow: 0 0 30px rgba(56, 189, 248, 0.8);
+            text-shadow: 0 0 30px rgba(224, 224, 224, 0.5);
         }
 
         .logo span {
@@ -223,8 +223,8 @@
 
         .nav-links a:hover {
             color: var(--accent);
-            background: rgba(56, 189, 248, 0.15);
-            text-shadow: 0 0 20px rgba(56, 189, 248, 0.6);
+            background: rgba(224, 224, 224, 0.1);
+            text-shadow: 0 0 20px rgba(224, 224, 224, 0.4);
         }
 
         .nav-links a:hover::before {
@@ -233,8 +233,8 @@
 
         .nav-links a.active {
             color: var(--accent);
-            background: rgba(56, 189, 248, 0.2);
-            box-shadow: inset 0 0 20px rgba(56, 189, 248, 0.2);
+            background: rgba(224, 224, 224, 0.15);
+            box-shadow: inset 0 0 20px rgba(224, 224, 224, 0.15);
         }
 
         .nav-links a.active::before {
@@ -271,7 +271,7 @@
             left: 0;
             right: 0;
             height: 100%;
-            background: linear-gradient(180deg, rgba(56, 189, 248, 0.05) 0%, transparent 50%, rgba(139, 92, 246, 0.03) 100%);
+            background: linear-gradient(180deg, rgba(224, 224, 224, 0.03) 0%, transparent 50%, rgba(168, 168, 168, 0.02) 100%);
             pointer-events: none;
         }
 
@@ -311,8 +311,8 @@
             border-radius: 2rem;
             border: 2px solid var(--accent);
             box-shadow: 
-                0 50px 100px rgba(56, 189, 248, 0.3),
-                0 0 80px var(--accent-glow),
+                0 50px 100px rgba(0, 0, 0, 0.6),
+                0 0 80px rgba(224, 224, 224, 0.2),
                 0 20px 60px rgba(0, 0, 0, 0.8),
                 inset 0 1px 0 rgba(255, 255, 255, 0.1);
             transition: var(--transition);
@@ -325,7 +325,7 @@
             content: '';
             position: absolute;
             inset: -20px;
-            background: radial-gradient(circle at center, rgba(56, 189, 248, 0.2) 0%, transparent 70%);
+            background: radial-gradient(circle at center, rgba(224, 224, 224, 0.15) 0%, transparent 70%);
             border-radius: 2.5rem;
             animation: pulse-glow 3s ease-in-out infinite;
             pointer-events: none;
@@ -343,8 +343,8 @@
         .hero-image-container:hover img {
             transform: scale(1.1) rotateY(-8deg) rotateX(5deg);
             box-shadow: 
-                0 80px 120px rgba(56, 189, 248, 0.4),
-                0 0 100px var(--accent-glow),
+                0 80px 120px rgba(0, 0, 0, 0.7),
+                0 0 100px rgba(224, 224, 224, 0.3),
                 0 30px 80px rgba(0, 0, 0, 0.9),
                 inset 0 1px 0 rgba(255, 255, 255, 0.15);
             filter: brightness(1.15);
@@ -354,7 +354,7 @@
             display: inline-flex;
             align-items: center;
             padding: 1rem 2rem;
-            background: rgba(56, 189, 248, 0.1);
+            background: rgba(224, 224, 224, 0.08);
             border: 1.5px solid var(--accent);
             color: var(--accent);
             border-radius: 100px;
@@ -364,17 +364,17 @@
             letter-spacing: 3px;
             animation: pulse-border 3s infinite;
             backdrop-filter: blur(20px);
-            box-shadow: 0 0 30px rgba(56, 189, 248, 0.2), inset 0 0 20px rgba(56, 189, 248, 0.1);
+            box-shadow: 0 0 30px rgba(224, 224, 224, 0.15), inset 0 0 20px rgba(224, 224, 224, 0.08);
             position: relative;
             z-index: 2;
         }
 
         @keyframes pulse-border {
             0%, 100% {
-                box-shadow: 0 0 0 0 rgba(56, 189, 248, 0.4), inset 0 0 20px rgba(56, 189, 248, 0.1);
+                box-shadow: 0 0 0 0 rgba(224, 224, 224, 0.3), inset 0 0 20px rgba(224, 224, 224, 0.08);
             }
             50% {
-                box-shadow: 0 0 0 15px rgba(56, 189, 248, 0.1), inset 0 0 20px rgba(56, 189, 248, 0.15);
+                box-shadow: 0 0 0 15px rgba(224, 224, 224, 0.08), inset 0 0 20px rgba(224, 224, 224, 0.12);
             }
         }
 
@@ -388,10 +388,10 @@
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
-            text-shadow: 0 40px 80px rgba(56, 189, 248, 0.3);
+            text-shadow: 0 40px 80px rgba(0, 0, 0, 0.4);
             position: relative;
             z-index: 2;
-            filter: drop-shadow(0 20px 40px rgba(56, 189, 248, 0.2));
+            filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.3));
         }
 
         .hero p {
@@ -425,8 +425,8 @@
             overflow: hidden;
             user-select: none;
             box-shadow: 
-                0 20px 60px rgba(56, 189, 248, 0.3),
-                0 0 40px rgba(56, 189, 248, 0.2),
+                0 20px 60px rgba(0, 0, 0, 0.4),
+                0 0 40px rgba(224, 224, 224, 0.2),
                 inset 0 1px 0 rgba(255, 255, 255, 0.3);
             z-index: 2;
         }
@@ -455,8 +455,8 @@
         .btn:hover {
             transform: translateY(-8px);
             box-shadow: 
-                0 40px 100px rgba(56, 189, 248, 0.4),
-                0 0 60px rgba(56, 189, 248, 0.3),
+                0 40px 100px rgba(0, 0, 0, 0.5),
+                0 0 60px rgba(224, 224, 224, 0.3),
                 inset 0 1px 0 rgba(255, 255, 255, 0.4);
         }
 
@@ -469,15 +469,15 @@
             border: 2px solid var(--accent);
             color: var(--accent);
             box-shadow: 
-                0 0 30px rgba(56, 189, 248, 0.2),
-                inset 0 0 20px rgba(56, 189, 248, 0.1);
+                0 0 30px rgba(224, 224, 224, 0.15),
+                inset 0 0 20px rgba(224, 224, 224, 0.08);
         }
 
         .btn-secondary:hover {
-            background: rgba(56, 189, 248, 0.15);
+            background: rgba(224, 224, 224, 0.1);
             box-shadow: 
-                0 20px 60px rgba(56, 189, 248, 0.3),
-                inset 0 0 30px rgba(56, 189, 248, 0.2);
+                0 20px 60px rgba(224, 224, 224, 0.2),
+                inset 0 0 30px rgba(224, 224, 224, 0.15);
         }
 
         /* --- EXPERTISE & SKILLS --- */
@@ -491,18 +491,18 @@
         }
 
         .expert-card {
-            background: rgba(15, 23, 42, 0.6);
+            background: rgba(26, 26, 26, 0.7);
             padding: 3.5rem;
             border-radius: 2rem;
-            border: 1px solid rgba(56, 189, 248, 0.2);
+            border: 1px solid rgba(224, 224, 224, 0.15);
             transition: var(--transition);
             backdrop-filter: blur(20px);
             cursor: pointer;
             position: relative;
             overflow: hidden;
             box-shadow: 
-                0 20px 60px rgba(0, 0, 0, 0.5),
-                inset 0 1px 0 rgba(255, 255, 255, 0.1);
+                0 20px 60px rgba(0, 0, 0, 0.6),
+                inset 0 1px 0 rgba(255, 255, 255, 0.08);
         }
 
         .expert-card::before {
@@ -512,7 +512,7 @@
             left: -100%;
             width: 100%;
             height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(56, 189, 248, 0.25), transparent);
+            background: linear-gradient(90deg, transparent, rgba(224, 224, 224, 0.2), transparent);
             transition: left 0.8s ease;
             z-index: 0;
         }
@@ -521,7 +521,7 @@
             content: '';
             position: absolute;
             inset: 0;
-            background: radial-gradient(circle at top right, rgba(56, 189, 248, 0.1) 0%, transparent 60%);
+            background: radial-gradient(circle at top right, rgba(224, 224, 224, 0.1) 0%, transparent 60%);
             opacity: 0;
             transition: opacity 0.3s ease;
             z-index: 0;
@@ -536,13 +536,13 @@
         }
 
         .expert-card:hover {
-            background: rgba(15, 23, 42, 0.9);
+            background: rgba(26, 26, 26, 0.95);
             border-color: var(--accent);
             transform: translateY(-12px);
             box-shadow: 
-                0 40px 100px rgba(56, 189, 248, 0.2),
-                0 0 50px rgba(56, 189, 248, 0.15),
-                inset 0 1px 0 rgba(255, 255, 255, 0.15);
+                0 40px 100px rgba(224, 224, 224, 0.15),
+                0 0 50px rgba(224, 224, 224, 0.1),
+                inset 0 1px 0 rgba(255, 255, 255, 0.12);
         }
 
         .expert-card h4 {
@@ -553,7 +553,7 @@
             z-index: 1;
             font-size: 1.2rem;
             letter-spacing: 2px;
-            text-shadow: 0 0 20px rgba(56, 189, 248, 0.4);
+            text-shadow: 0 0 20px rgba(224, 224, 224, 0.3);
         }
 
         .expert-card p {
@@ -580,7 +580,7 @@
             font-size: 0.85rem;
             font-weight: 700;
             letter-spacing: 3px;
-            text-shadow: 0 0 15px rgba(56, 189, 248, 0.5);
+            text-shadow: 0 0 15px rgba(224, 224, 224, 0.4);
         }
 
         .projects-header h2 {
@@ -603,10 +603,10 @@
         }
 
         .project-card {
-            background: linear-gradient(135deg, rgba(15, 23, 42, 0.7), rgba(26, 40, 71, 0.5));
+            background: linear-gradient(135deg, rgba(26, 26, 26, 0.8), rgba(42, 42, 42, 0.6));
             border-radius: 2.5rem;
             padding: 3.5rem;
-            border: 1px solid rgba(56, 189, 248, 0.2);
+            border: 1px solid rgba(224, 224, 224, 0.15);
             transition: var(--transition);
             position: relative;
             overflow: hidden;
@@ -617,8 +617,8 @@
             flex-direction: column;
             justify-content: space-between;
             box-shadow: 
-                0 30px 80px rgba(0, 0, 0, 0.6),
-                inset 0 1px 0 rgba(255, 255, 255, 0.1);
+                0 30px 80px rgba(0, 0, 0, 0.7),
+                inset 0 1px 0 rgba(255, 255, 255, 0.08);
         }
 
         .project-card::before {
@@ -628,7 +628,7 @@
             right: -50%;
             width: 200%;
             height: 200%;
-            background: radial-gradient(circle, rgba(56, 189, 248, 0.3) 0%, transparent 70%);
+            background: radial-gradient(circle, rgba(224, 224, 224, 0.2) 0%, transparent 70%);
             opacity: 0;
             transition: opacity 0.4s ease;
             z-index: 0;
@@ -638,7 +638,7 @@
             content: '';
             position: absolute;
             inset: 0;
-            background: linear-gradient(135deg, rgba(56, 189, 248, 0.15) 0%, transparent 100%);
+            background: linear-gradient(135deg, rgba(224, 224, 224, 0.1) 0%, transparent 100%);
             opacity: 0;
             transition: opacity 0.3s ease;
             z-index: 1;
@@ -648,9 +648,9 @@
             transform: translateY(-16px) rotateX(2deg);
             border-color: var(--accent);
             box-shadow: 
-                0 60px 120px rgba(56, 189, 248, 0.3),
-                0 0 80px rgba(56, 189, 248, 0.2),
-                inset 0 1px 0 rgba(255, 255, 255, 0.15);
+                0 60px 120px rgba(224, 224, 224, 0.2),
+                0 0 80px rgba(224, 224, 224, 0.15),
+                inset 0 1px 0 rgba(255, 255, 255, 0.12);
         }
 
         .project-card:hover::before {
@@ -670,22 +670,22 @@
             font-family: 'JetBrains Mono', monospace;
             font-size: 0.7rem;
             color: var(--accent);
-            background: rgba(56, 189, 248, 0.15);
+            background: rgba(224, 224, 224, 0.1);
             padding: 0.6rem 1.2rem;
             border-radius: 8px;
             margin-bottom: 2rem;
             display: inline-block;
             transition: var(--transition-fast);
-            border: 1px solid rgba(56, 189, 248, 0.3);
+            border: 1px solid rgba(224, 224, 224, 0.25);
             letter-spacing: 1.5px;
             font-weight: 700;
-            box-shadow: 0 0 20px rgba(56, 189, 248, 0.15);
+            box-shadow: 0 0 20px rgba(224, 224, 224, 0.1);
         }
 
         .project-card:hover .tag {
-            background: rgba(56, 189, 248, 0.25);
+            background: rgba(224, 224, 224, 0.2);
             border-color: var(--accent);
-            box-shadow: 0 0 30px rgba(56, 189, 248, 0.25);
+            box-shadow: 0 0 30px rgba(224, 224, 224, 0.2);
         }
 
         .project-card h3 {
@@ -715,11 +715,11 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            background: linear-gradient(135deg, rgba(56, 189, 248, 0.2), rgba(56, 189, 248, 0.1));
+            background: linear-gradient(135deg, rgba(224, 224, 224, 0.15), rgba(224, 224, 224, 0.08));
             border: 1.5px solid var(--accent);
             border-radius: 50%;
             color: var(--accent);
-            box-shadow: 0 0 30px rgba(56, 189, 248, 0.3);
+            box-shadow: 0 0 30px rgba(224, 224, 224, 0.2);
         }
 
         .project-card:hover .expand-icon {
@@ -731,16 +731,16 @@
         .cta-box {
             padding: 12rem 5rem;
             text-align: center;
-            background: linear-gradient(135deg, rgba(56, 189, 248, 0.12) 0%, rgba(139, 92, 246, 0.08) 100%);
-            border: 2px solid rgba(56, 189, 248, 0.3);
+            background: linear-gradient(135deg, rgba(224, 224, 224, 0.08) 0%, rgba(168, 168, 168, 0.05) 100%);
+            border: 2px solid rgba(224, 224, 224, 0.25);
             border-radius: 4rem;
             margin-bottom: 10rem;
             position: relative;
             overflow: hidden;
             box-shadow: 
-                0 60px 120px rgba(56, 189, 248, 0.15),
-                inset 0 1px 0 rgba(255, 255, 255, 0.1),
-                0 0 60px rgba(56, 189, 248, 0.2);
+                0 60px 120px rgba(0, 0, 0, 0.5),
+                inset 0 1px 0 rgba(255, 255, 255, 0.08),
+                0 0 60px rgba(224, 224, 224, 0.15);
             z-index: 3;
         }
 
@@ -791,7 +791,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba(0, 0, 0, 0.92);
+            background: rgba(0, 0, 0, 0.95);
             z-index: 3000;
             align-items: center;
             justify-content: center;
@@ -811,13 +811,13 @@
             padding: 5rem;
             max-width: 750px;
             width: 100%;
-            border: 2px solid rgba(56, 189, 248, 0.4);
+            border: 2px solid rgba(224, 224, 224, 0.3);
             position: relative;
             animation: slideUpModal 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
             box-shadow: 
                 0 80px 160px rgba(0, 0, 0, 0.8),
-                0 0 80px var(--accent-glow),
-                inset 0 1px 0 rgba(255, 255, 255, 0.15);
+                0 0 80px rgba(224, 224, 224, 0.15),
+                inset 0 1px 0 rgba(255, 255, 255, 0.12);
             max-height: 85vh;
             overflow-y: auto;
         }
@@ -834,7 +834,7 @@
         .modal-content::-webkit-scrollbar-thumb {
             background: var(--accent);
             border-radius: 4px;
-            box-shadow: 0 0 15px rgba(56, 189, 248, 0.4);
+            box-shadow: 0 0 15px rgba(224, 224, 224, 0.3);
         }
 
         .modal-content::-webkit-scrollbar-thumb:hover {
@@ -869,8 +869,8 @@
             cursor: pointer;
             color: var(--text-sub);
             transition: var(--transition-fast);
-            background: rgba(56, 189, 248, 0.1);
-            border: 2px solid rgba(56, 189, 248, 0.2);
+            background: rgba(224, 224, 224, 0.08);
+            border: 2px solid rgba(224, 224, 224, 0.2);
             width: 50px;
             height: 50px;
             display: flex;
@@ -878,15 +878,15 @@
             justify-content: center;
             border-radius: 50%;
             z-index: 1;
-            box-shadow: 0 0 20px rgba(56, 189, 248, 0.2);
+            box-shadow: 0 0 20px rgba(224, 224, 224, 0.15);
         }
 
         .modal-close:hover {
             color: var(--accent);
-            background: rgba(56, 189, 248, 0.2);
+            background: rgba(224, 224, 224, 0.15);
             border-color: var(--accent);
             transform: rotate(90deg);
-            box-shadow: 0 0 30px rgba(56, 189, 248, 0.4);
+            box-shadow: 0 0 30px rgba(224, 224, 224, 0.3);
         }
 
         /* --- ANIMATIONS --- */
@@ -915,7 +915,7 @@
         /* --- FOOTER --- */
         footer {
             padding: 8rem 0 3rem;
-            border-top: 1px solid rgba(56, 189, 248, 0.2);
+            border-top: 1px solid rgba(224, 224, 224, 0.15);
             text-align: center;
             position: relative;
             z-index: 3;
@@ -963,13 +963,13 @@
             text-decoration: none;
             font-size: 0.85rem;
             transition: var(--transition-fast);
-            text-shadow: 0 0 15px rgba(56, 189, 248, 0.4);
+            text-shadow: 0 0 15px rgba(224, 224, 224, 0.3);
         }
 
         footer .footer-links a:hover {
             color: var(--accent-secondary);
             transform: translateY(-3px);
-            text-shadow: 0 0 25px rgba(56, 189, 248, 0.6);
+            text-shadow: 0 0 25px rgba(224, 224, 224, 0.5);
         }
 
         /* --- FLOATING PARTICLES --- */
@@ -1000,85 +1000,96 @@
             }
 
             .hero-flex {
-                flex-direction: column-reverse;
-                text-align: center;
+                flex-direction: column;
                 gap: 3rem;
             }
 
-            .hero-text {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-            }
-
             .hero-image-container {
-                flex: 0 0 auto;
-                width: 100%;
-                max-width: 320px;
+                flex: 0 0 300px;
             }
 
-            h1 {
-                font-size: 2.5rem;
-                letter-spacing: -1px;
+            .projects-header {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .projects-header h2 {
+                font-size: clamp(1.5rem, 5vw, 2.5rem);
             }
 
             .grid {
                 grid-template-columns: 1fr;
-                gap: 2rem;
+            }
+
+            .cta-box {
+                padding: 8rem 3rem;
+            }
+
+            .modal-content {
+                padding: 3rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                height: 70px;
+                padding: 0 1rem;
             }
 
             .nav-links {
                 display: none;
             }
 
-            .nav-links.active {
-                display: flex;
-                flex-direction: column;
-                position: absolute;
-                top: 90px;
-                left: 0;
-                right: 0;
-                background: rgba(2, 6, 23, 0.98);
-                backdrop-filter: blur(30px);
-                padding: 2rem;
-                border-bottom: 1px solid rgba(56, 189, 248, 0.1);
-                gap: 0;
-            }
-
-            .nav-links.active a {
-                margin-left: 0;
-                padding: 1rem;
-                border-radius: 8px;
-            }
-
             .nav-toggle {
                 display: block;
-            }
-
-            .cta-box {
-                padding: 8rem 2rem;
-            }
-
-            .modal-content {
-                padding: 3rem;
-            }
-
-            .expertise-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-
-        @media (max-width: 768px) {
-            .container {
-                padding: 0 1.5rem;
             }
 
             .hero {
                 padding: 4rem 0;
             }
 
-            nav {
-                height: 70px;
+            h1 {
+                font-size: clamp(1.8rem, 5vw, 3rem);
+            }
+
+            .expertise-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .project-card {
+                min-height: 320px;
+                padding: 2.5rem;
+            }
+
+            .expand-icon {
+                width: 50px;
+                height: 50px;
+                font-size: 1.5rem;
+            }
+
+            .cta-box {
+                padding: 6rem 2rem;
+                border-radius: 2rem;
+            }
+
+            .cta-box h2 {
+                font-size: clamp(1.5rem, 4vw, 2.2rem);
+            }
+
+            footer {
+                padding: 4rem 0 2rem;
+            }
+
+            .footer-links {
+                flex-direction: column;
+                gap: 1.5rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 1rem;
             }
 
             .logo {
@@ -1086,249 +1097,244 @@
             }
 
             h1 {
-                font-size: 2rem;
+                font-size: clamp(1.5rem, 4vw, 2.2rem);
+                margin-bottom: 1.5rem;
             }
 
-            .expert-card,
+            .hero p {
+                font-size: 1rem;
+                margin-bottom: 2rem;
+            }
+
+            .btn {
+                padding: 1rem 2.5rem;
+                font-size: 0.8rem;
+            }
+
+            .badge {
+                padding: 0.8rem 1.5rem;
+                font-size: 0.65rem;
+            }
+
             .project-card {
                 padding: 2rem;
+                min-height: 300px;
+            }
+
+            .project-card h3 {
+                font-size: 1.4rem;
+                margin-bottom: 1rem;
+            }
+
+            .cta-box {
+                padding: 4rem 1.5rem;
+                margin-bottom: 6rem;
             }
 
             .modal-content {
-                border-radius: 1.5rem;
                 padding: 2rem;
+                border-radius: 2rem;
             }
-        }
 
-        /* --- ACCESSIBILITY --- */
-        @media (prefers-reduced-motion: reduce) {
-            * {
-                animation-duration: 0.01ms !important;
-                animation-iteration-count: 1 !important;
-                transition-duration: 0.01ms !important;
-                scroll-behavior: auto !important;
+            .modal-close {
+                width: 40px;
+                height: 40px;
+                font-size: 2rem;
             }
-        }
-
-        /* --- FOCUS STATES --- */
-        a:focus-visible,
-        button:focus-visible {
-            outline: 2px solid var(--accent);
-            outline-offset: 4px;
-        }
-
-        /* --- FORM ELEMENTS --- */
-        input,
-        textarea {
-            background: rgba(255, 255, 255, 0.08);
-            border: 1.5px solid rgba(56, 189, 248, 0.2);
-            color: var(--text-main);
-            padding: 1rem 1.5rem;
-            border-radius: 12px;
-            font-family: inherit;
-            transition: var(--transition-fast);
-            box-shadow: inset 0 2px 10px rgba(0, 0, 0, 0.3);
-        }
-
-        input:focus,
-        textarea:focus {
-            border-color: var(--accent);
-            background: rgba(56, 189, 248, 0.12);
-            outline: none;
-            box-shadow: 
-                inset 0 2px 10px rgba(0, 0, 0, 0.3),
-                0 0 30px rgba(56, 189, 248, 0.3);
         }
     </style>
 </head>
 <body>
-
-    <div class="scroll-progress"></div>
-
     <div class="bg-animation">
         <div class="orb orb-1"></div>
         <div class="orb orb-2"></div>
         <div class="orb orb-3"></div>
     </div>
 
-    <nav id="navbar">
+    <div class="scroll-progress"></div>
+
+    <nav>
         <div class="container nav-flex">
-            <a href="#" class="logo">SEAN.<span>SYS</span></a>
-            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu">☰</button>
-            <div class="nav-links" id="navLinks">
-                <a href="#about" class="nav-link">Expertise</a>
-                <a href="#work" class="nav-link">Systems</a>
+            <a href="/" class="logo">SP<span>.</span>BENTILACION</a>
+            <button class="nav-toggle">☰</button>
+            <div class="nav-links">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#expertise" class="nav-link">Expertise</a>
+                <a href="#projects" class="nav-link">Projects</a>
                 <a href="#contact" class="nav-link">Contact</a>
             </div>
         </div>
     </nav>
 
-    <main class="container">
-        <section class="hero">
+    <section class="hero" id="home">
+        <div class="container">
             <div class="hero-flex">
                 <div class="hero-text">
-                    <span class="badge">✓ AVAILABLE FOR Q2 2026</span>
-                    <h1 class="reveal">
-                        Sean Philip<br><span style="color: var(--accent);">Bentilacion</span>
-                    </h1>
-                    <p class="reveal">
-                        Systems Architect crafting resilient architectures and secure regional infrastructures that scale with precision.
-                    </p>
-                    <div>
-                        <a href="#contact" class="btn">Get In Touch</a>
-                        <a href="#work" class="btn btn-secondary">View Work</a>
+                    <div class="badge">SYSTEMS ARCHITECT</div>
+                    <h1>Building Resilient Architectures</h1>
+                    <p>Specializing in secure infrastructure design and scalable web systems that power digital transformation across enterprises.</p>
+                    <div style="display: flex; gap: 1.5rem; flex-wrap: wrap;">
+                        <button class="btn">View My Work</button>
+                        <button class="btn btn-secondary">Get In Touch</button>
                     </div>
                 </div>
                 <div class="hero-image-container">
-                    <img src="https://images.unsplash.com/photo-1507238691413-56dab8c89b77?w=400&h=500&fit=crop" alt="Sean Philip Bentilacion">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop" alt="Profile">
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="about" class="expertise-section">
-            <div class="projects-header">
-                <span>CORE COMPETENCIES</span>
-                <h2>Expertise</h2>
-            </div>
+    <section style="padding: 10rem 0; background: rgba(26, 26, 26, 0.3);" id="expertise">
+        <div class="container">
+            <h2 style="font-size: 3rem; margin-bottom: 5rem; text-align: center;">Core Expertise</h2>
             <div class="expertise-grid">
-                <div class="expert-card">
-                    <h4>🏗️ INFRASTRUCTURE</h4>
-                    <p>Architecting scalable, resilient systems that handle enterprise workloads with zero-downtime deployments and geographic redundancy.</p>
+                <div class="expert-card reveal">
+                    <h4>🏗️ ARCHITECTURE</h4>
+                    <p>Design and implement scalable, secure infrastructure solutions tailored to enterprise requirements.</p>
                 </div>
-                <div class="expert-card">
-                    <h4>🔐 SECURITY</h4>
-                    <p>Implementing security-first architectures with encryption, IAM strategies, and compliance frameworks across regional boundaries.</p>
+                <div class="expert-card reveal">
+                    <h4>🔒 SECURITY</h4>
+                    <p>Develop comprehensive security strategies and regional infrastructure protection mechanisms.</p>
                 </div>
-                <div class="expert-card">
-                    <h4>⚡ PERFORMANCE</h4>
-                    <p>Optimizing system performance through caching strategies, CDN architecture, and database optimization for millisecond-level responsiveness.</p>
+                <div class="expert-card reveal">
+                    <h4>⚙️ SYSTEMS</h4>
+                    <p>Build resilient systems with focus on performance, reliability, and long-term maintainability.</p>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="work" class="projects-section">
+    <section style="padding: 10rem 0;" id="projects">
+        <div class="container">
             <div class="projects-header">
-                <span>PORTFOLIO</span>
-                <h2>Systems</h2>
+                <span>FEATURED WORK</span>
+                <h2>Notable Projects</h2>
             </div>
             <div class="grid">
-                <div class="project-card">
+                <div class="project-card reveal">
                     <div class="project-info">
                         <span class="tag">INFRASTRUCTURE</span>
-                        <h3>Regional CDN Architecture</h3>
-                        <p>Engineered a multi-region content delivery network serving 2M+ daily requests with sub-100ms latency using edge computing and intelligent routing.</p>
+                        <h3>Regional Cloud Infrastructure</h3>
+                        <p>Built a multi-region cloud infrastructure supporting 100K+ concurrent users with automatic failover and disaster recovery capabilities.</p>
                     </div>
-                    <div class="expand-icon">↗</div>
+                    <div class="expand-icon">→</div>
                 </div>
-                <div class="project-card">
+                <div class="project-card reveal">
                     <div class="project-info">
                         <span class="tag">SECURITY</span>
-                        <h3>Enterprise IAM Framework</h3>
-                        <p>Designed and implemented a zero-trust security model with automated credential rotation, MFA enforcement, and real-time audit logging.</p>
+                        <h3>Enterprise Security Framework</h3>
+                        <p>Architected comprehensive security framework with encryption, authentication, and compliance monitoring across distributed systems.</p>
                     </div>
-                    <div class="expand-icon">↗</div>
+                    <div class="expand-icon">→</div>
                 </div>
-                <div class="project-card">
+                <div class="project-card reveal">
                     <div class="project-info">
                         <span class="tag">PERFORMANCE</span>
-                        <h3>Database Optimization Suite</h3>
-                        <p>Optimized legacy database queries reducing response times by 70% through indexing strategies, query optimization, and cache layering.</p>
+                        <h3>High-Performance Web Platform</h3>
+                        <p>Optimized legacy systems achieving 300% performance improvement and 60% reduction in infrastructure costs.</p>
                     </div>
-                    <div class="expand-icon">↗</div>
+                    <div class="expand-icon">→</div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section class="cta-box" id="contact">
-            <h2>Ready to architect something extraordinary?</h2>
-            <p>Let's discuss how resilient systems and secure architecture can transform your infrastructure.</p>
-            <a href="mailto:sean@example.com" class="btn">Contact Me</a>
-        </section>
-    </main>
+    <section style="padding: 10rem 0;">
+        <div class="container">
+            <div class="cta-box">
+                <h2>Let's Build Something Great</h2>
+                <p>Ready to transform your infrastructure and unlock new possibilities?</p>
+                <button class="btn">Schedule A Consultation</button>
+            </div>
+        </div>
+    </section>
 
     <footer>
         <div class="container">
+            <p>© 2025 Sean Philip D. Bentilacion. All rights reserved.</p>
             <div class="footer-links">
-                <a href="https://github.com" target="_blank" rel="noopener">GitHub</a>
-                <a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
-                <a href="https://twitter.com" target="_blank" rel="noopener">Twitter</a>
-                <a href="mailto:sean@example.com">Email</a>
+                <a href="#linkedin">LinkedIn</a>
+                <a href="#github">GitHub</a>
+                <a href="#email">Email</a>
             </div>
-            <p>&copy; 2026 Sean Philip Bentilacion. Architecting the future.</p>
+            <p style="margin-top: 2rem; color: var(--text-muted); font-size: 0.85rem;">Designed and built with precision.</p>
         </div>
     </footer>
 
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <h2 style="margin-bottom: 2rem;">Project Details</h2>
+            <p>Detailed project information will appear here.</p>
+        </div>
+    </div>
+
     <script>
         // Scroll progress bar
-        const scrollProgress = document.querySelector('.scroll-progress');
-        const updateScrollProgress = () => {
+        window.addEventListener('scroll', () => {
             const scrollTop = window.scrollY;
             const docHeight = document.documentElement.scrollHeight - window.innerHeight;
             const scrollPercent = (scrollTop / docHeight) * 100;
-            scrollProgress.style.width = scrollPercent + '%';
-        };
-        window.addEventListener('scroll', updateScrollProgress);
+            document.querySelector('.scroll-progress').style.width = scrollPercent + '%';
 
-        // Navbar scroll effect
-        const navbar = document.getElementById('navbar');
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 50) {
-                navbar.classList.add('scroll-active');
+            // Navbar scroll effect
+            const nav = document.querySelector('nav');
+            if (scrollTop > 50) {
+                nav.classList.add('scroll-active');
             } else {
-                navbar.classList.remove('scroll-active');
+                nav.classList.remove('scroll-active');
+            }
+
+            // Reveal animations
+            const reveals = document.querySelectorAll('.reveal');
+            reveals.forEach(reveal => {
+                const windowHeight = window.innerHeight;
+                const revealTop = reveal.getBoundingClientRect().top;
+                if (revealTop < windowHeight - 100) {
+                    reveal.classList.add('active');
+                }
+            });
+        });
+
+        // Project card modal
+        document.querySelectorAll('.project-card').forEach(card => {
+            card.addEventListener('click', () => {
+                document.getElementById('modal').classList.add('active');
+            });
+        });
+
+        document.querySelector('.modal-close').addEventListener('click', () => {
+            document.getElementById('modal').classList.remove('active');
+        });
+
+        document.getElementById('modal').addEventListener('click', (e) => {
+            if (e.target.id === 'modal') {
+                document.getElementById('modal').classList.remove('active');
             }
         });
 
-        // Mobile nav toggle
-        const navToggle = document.getElementById('navToggle');
-        const navLinks = document.getElementById('navLinks');
-        navToggle.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-        });
-
-        // Close mobile nav on link click
+        // Navigation active state
         document.querySelectorAll('.nav-link').forEach(link => {
             link.addEventListener('click', () => {
-                navLinks.classList.remove('active');
+                document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
+                link.classList.add('active');
             });
         });
-
-        // Reveal animations on scroll
-        const revealElements = document.querySelectorAll('.reveal');
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -100px 0px'
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('active');
-                    observer.unobserve(entry.target);
-                }
-            });
-        }, observerOptions);
-
-        revealElements.forEach(element => observer.observe(element));
 
         // Floating particles
-        const particleCount = 30;
-        for (let i = 0; i < particleCount; i++) {
-            const particle = document.createElement('div');
-            particle.className = 'floating-particle';
-            particle.style.left = Math.random() * 100 + '%';
-            particle.style.top = '100vh';
-            particle.style.animationDelay = Math.random() * 3 + 's';
-            particle.style.animationDuration = (Math.random() * 4 + 6) + 's';
-            document.body.appendChild(particle);
+        function createParticles() {
+            const particleCount = 20;
+            for (let i = 0; i < particleCount; i++) {
+                const particle = document.createElement('div');
+                particle.classList.add('floating-particle');
+                particle.style.left = Math.random() * 100 + '%';
+                particle.style.bottom = Math.random() * 100 + '%';
+                particle.style.animationDelay = Math.random() * 3 + 's';
+                document.body.appendChild(particle);
+            }
         }
-
-        // Project card modal (example)
-        document.querySelectorAll('.project-card').forEach(card => {
-            card.addEventListener('click', () => {
-                console.log('Project clicked:', card.querySelector('h3').textContent);
-            });
-        });
+        createParticles();
     </script>
 </body>
 </html>
